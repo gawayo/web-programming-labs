@@ -7,6 +7,7 @@
             body { 
                 margin: 0;
                 font-family: Arial, Helvetica, sans-serif;
+                
                 }
             .header {
                 background-color: #333333;
@@ -22,10 +23,14 @@
                 font-size: 14px;
                 color:#888;
                 font-style: italic;
-                text-align: right;
+                text-align: center;
                 height: 30px;
                 line-height: 30px;
                 padding-right: 20px;
+                position: fixed; 
+                bottom: 0px; 
+                right: 1px;
+                width: 100%;
             }
             .a {
                 display: inline;
@@ -64,11 +69,15 @@
                 position: relative;
                 text-align: center;
                 line-height: 100px;
+                
             }
             .G:hover {
                 background-color: black;
                 color:beige;
                 z-index: 1;
+            }
+            .content {
+                margin-bottom: 40px;
             }
         </style>
         </head>
@@ -93,10 +102,10 @@
 
                 <div style ="clear: both">end</div>
 
-                <div class="d">В тот год осенняя погода</div>
-                <div class="d">Стояла долго на дворе,</div>
+                <div class="d" style="top: -10px; left: 110px;">В тот год осенняя погода</div>
+                <div class="d" style="top: 5px; left: 90px;">Стояла долго на дворе,</div>
                 <div class="d" style="top: -28px; left: 70px;">Зимы ждала, ждала природа.</div>
-                <div class="d">Снег выпал только в январе</div>
+                <div class="d" style="top: -15px; left: 50px;">Снег выпал только в январе</div>
 
                 <h1>Absolute</h1>
                 <div>На третье в ночь. Проснувшись рано,</div>
@@ -118,6 +127,7 @@
                 <div class="G" style="top: 0px; left: 110px;">Блок В</div>
                 <div class="G" style="top: -10px; left: 130px;">Блок Г</div>
                 <div class="G" style="top: -28px; left: 150px;">Блок Д</div>
+                afsjkasfakjkasf
             </div>
 
             <div class = "footer">
