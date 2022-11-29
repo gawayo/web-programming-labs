@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color:#fffff0;
-}
+}   
 .header {
     color:white;
     background: black;
@@ -24,4 +24,9 @@ body {
     bottom: 0;
     left: 0;
     right: 0 ; 
+}
+.header .language {
+    position : absolute;
+    right: 30px;
+    top: 0px;
 }

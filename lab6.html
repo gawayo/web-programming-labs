@@ -9,36 +9,41 @@
 
             let x=33;
             let s='яблоки';
-            let if = 17;
+            //let if = 17;
             console.log('x=', x, 's=', s);
         </script>
+        <script src="lab6.js"></script>
     </head>
     <body>
         <div class = "header">
-                Блык Егор, Щеглов Владислав
+                <div id = "student">Блык Егор, Щеглов Владислав</div>
+                <div class = "language">
+                    <input type = "button" value = "ru" onclick = "setRussian()">
+                    <input type = "button" value = "eu" onclick = "setEnglish()">
+                </div>
         </div>
 
         <div class = "content">
             <form>
                 <div>
                     <div>
-                        <span> Ваше Имя </span>: <input type = "text">
+                        <span id ="your-name">Ваше Имя</span>: <input type = "text" id ="input-name" placeholder="Введите Имя">
                     </div>
                     <div>
-                        <span> Ваша Фамилия </span>: <input type = "text">
+                        <span id="your-surname">Ваша Фамилия</span>: <input type = "text" id="input-surname" placeholder="Введите Фамилию">
                     </div>
                     <div>
-                        <span> Ваш возраст </span>: <input type = "number">
+                        <span id ="your-age">Ваш возраст</span>: <input type = "number" id ="input-age" placeholder="Введите Возраст">
                     </div>
                     <div>
-                        <input type ="button" value = "ok">
-                        <input type = "reset" value = "сброс"
+                        <input type ="button" value = "ok" id="ok-button">
+                        <input type = "reset" value = "сброс" id="reset-button">
                     </div>
                 </div>
             </form>
         </div>
 
-        <div>
+        <div class = "footer" id = "footer">
             Факультет Бизнеса, ФБИ-03, 3 курс, 2022
         </div>
     </body>
