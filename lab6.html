@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class = "header">
-                <div id = "student">Блык Егор, Щеглов Владислав</div>
+                <div id = "student" onclick="showAlert1()">Блык Егор, Щеглов Владислав</div>
                 <div class = "language">
                     <input type = "button" value = "ru" onclick = "setRussian()">
                     <input type = "button" value = "eu" onclick = "setEnglish()">
@@ -25,7 +25,7 @@
 
         <div class = "content">
             <form>
-                <div>
+                <div id="user-data">
                     <div>
                         <span id ="your-name">Ваше Имя</span>: <input type = "text" id ="input-name" placeholder="Введите Имя">
                     </div>
@@ -36,14 +36,14 @@
                         <span id ="your-age">Ваш возраст</span>: <input type = "number" id ="input-age" placeholder="Введите Возраст">
                     </div>
                     <div>
-                        <input type ="button" value = "ok" id="ok-button">
+                        <input type ="button" value = "ok" id="ok-button" onclick="showAlert()">
                         <input type = "reset" value = "сброс" id="reset-button">
                     </div>
                 </div>
             </form>
         </div>
 
-        <div class = "footer" id = "footer">
+        <div class = "footer" id = "footer" onclick="showAlert2()">
             Факультет Бизнеса, ФБИ-03, 3 курс, 2022
         </div>
     </body>
