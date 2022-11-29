@@ -30,3 +30,24 @@ body {
     right: 30px;
     top: 0px;
 }
+
+#rectangle{
+    width:200px;
+    height:100px;
+    background:grey;
+    border-bottom: 2px;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-style: solid;
+    text-align: center;
+    line-height: 100px;
+}
+
+#st { 
+    position: absolute;
+    background-color: aqua;
+    height: 100px;
+    width: 50px;
+
+}
