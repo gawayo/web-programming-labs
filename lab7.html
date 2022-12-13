@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="lab7.css" type="text/css">
         <script src="lab7.js"></script>
     </head>
-    <body>
+    <body onload="makeStairs()">
         <div class="header">
             Блык Егор. Щеглов Владислав
         </div>
@@ -37,8 +37,10 @@
                         <input type="button" value="ok" id="ok-button" onclick="showAlert()">
                         <input type="reset" value="сброс" id="reset-button">
                     </div>
-                </div>
+                </div>            
             </form>
+
+            <div id="stairs"></div>
         </div>
 
         <div clas="footer">
