@@ -1,3 +1,7 @@
+function ALL() {
+    makeStairs();
+    F_snowflake();
+}
 function showAlert() {
     let userName = document.getElementById('input-name').value;
     let userSurname = document.getElementById('input-surname').value;
@@ -42,5 +46,22 @@ function makeStairs() {
         steps[i].style.left = (30 + 10*i) + 'px';
         steps[i].style.top = (300 + 80*i) + 'px';
         steps[i].innerHTML = 'Блок номер ' + (i+1);
+    }
+}
+
+function F_snowflake() {
+    let snowflake = document.querySelector('#snowflake');
+    let snowflakeCount = 100;
+    for (let i = 0; i<snowflakeCount; i++) {
+        snowflake.innerHTML += '<img class="sibir" src="Sibir_Novosibirsk_Logo.png"></img>'
+    }
+    let sibir = document.querySelectorAll('.sibir');
+    let screenWidth = window.screen.width;
+    let screenHeight = window.screen.height;
+    
+    for (let i = 0; i<sibir.length; i++) {
+        sibir[i].style.left = Math.random() * (screenWidth) + 'px';
+        sibir[i].style.top = Math.random() * (screenHeight) + 'px';
+        sibir[i].style.width = Math.random() * 100 + 'px';
     }
 }
