@@ -70,3 +70,8 @@ function showAlert2() {
     let color = 'rgb(' + r + ',' + g + ',' + b + ')';
     document.getElementById('footer').style.backgroundColor = color;
 }
+
+function moveleft() {
+
+    
+}
