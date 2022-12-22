@@ -26,7 +26,14 @@
     font-size: 20px;
     color:darkcyan
 }
-#date {
-    padding-left: 20px;
-    position: fixed;
+#time {
+    padding-right: 30px;
+    text-align: right;
+    font-size: 30px;
+    font-family: fantasy;
+    color:aliceblue;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
