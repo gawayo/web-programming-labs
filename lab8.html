@@ -7,13 +7,20 @@
         <script src="lab8.js"></script>
     </head>
     <body>
-        <div clas="header">
+        <div class="header">
             Блык Егор. Щеглов Владислав
         </div>
 
-        <div class="content">
+        <div class="content"> 
+            Сегодня: <span id="today"></span> 
         </div>
-
+        <div>
+            Моя дата рождения: <input type="date">
+        </div>
+        <div>
+            <button onclick="showDaysCount()">Рассчитать, сколько прошло дней</button>
+        </div>
+        <div id="result"></div>
         <div class="footer">
             Факультет Бизнеса, ФБИ-03, 3 курс, 2022
         </div>
