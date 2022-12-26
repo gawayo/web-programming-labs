@@ -1,6 +1,7 @@
 function ALL() {
     makeStairs();
     F_snowflake();
+    KARMANbl();
 }
 function showAlert() {
     let userName = document.getElementById('input-name').value;
@@ -63,5 +64,20 @@ function F_snowflake() {
         sibir[i].style.left = Math.random() * (screenWidth) + 'px';
         sibir[i].style.top = Math.random() * (screenHeight) + 'px';
         sibir[i].style.width = Math.random() * 100 + 'px';
+    }
+}
+function KARMANbl(){
+    let steps = document.querySelectorAll('.MAXKORZH');
+    for (let i = 0; i<steps.length; i++) {
+        let r = Math.round(Math.random()*255);
+        let g = Math.round(Math.random()*255);
+        let b = Math.round(Math.random()*255);
+        steps[i].style.color = 'rgb(' + r + ',' + g + ',' + b +')';
+        r = Math.round(Math.random()*255);
+        g = Math.round(Math.random()*255);
+        b = Math.round(Math.random()*255);
+        steps[i].style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b +')';
+        steps[i].style.fontSize = (i + 20)+'px';
+        steps[i].style.width = (i * 20 + 300)+'px';
     }
 }
