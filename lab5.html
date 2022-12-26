@@ -17,6 +17,7 @@
                 font-size: 20px;
                 height: 80px;
                 padding-left: 30px;
+                line-height: 80px;
             }
             .footer {
                 background-color: #333;
@@ -77,14 +78,56 @@
             }
             .content {
                 margin-bottom: 40px;
+                margin-left: 100px;
             }
-
+            .menu {
+                position: absolute;
+            }
+            .products{
+                display: none;
+            }
+            .menu:hover .products{
+                display: block;
+            }
+            .images {
+                display: none;
+            }
+            .menu:hover .images{
+                display: block;
+            }
+            .news {
+                display: none;
+            }
+            .menu:hover .news{
+                display: block;
+            }
+            .katalog {
+                display: block; 
+            }
+            .images:hover {
+                background-color: #888;
+            }
+            .news:hover {
+                background-color: #888;
+            }
+            .products:hover {
+                background-color: #888;
+            }
+            .katalog:hover {
+                background-color: #888;
+            }
         </style>
         </head>
         <body>
             <div class = "header">
                 Блык Егор, Щеглов Владислав
-            
+            </div>
+            <div class="menu">
+            <div class="katalog">Каталог</div>
+            <div class="products">Товары</div>
+            <div class="images">Картинки</div>
+            <div class="news">Новости</div>
+            </div>
             </div>
             
             <div class = "content">
