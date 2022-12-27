@@ -16,3 +16,21 @@ function namevlad(button) {
     else
     button.innerHTML = 'Влад'
 }
+function pushme(button) {
+    if(button.innerHTML == 'Нажми меня'){
+        button.innerHTML = 'Еще раз нажми';
+        button.style.color = "white";
+    }
+   else if(button.innerHTML == 'Еще раз нажми'){
+        button.innerHTML = 'Еще';
+        button.style.color = "green";
+   }    
+    else if(button.innerHTML == 'Еще'){
+        button.innerHTML = 'Начать сначала';
+        button.style.color = "brown";
+   }    
+    else {
+    button.innerHTML = 'Нажми меня';
+    button.style.color = "yellow";
+   }      
+}
